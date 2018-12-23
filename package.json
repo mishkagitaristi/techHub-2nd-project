@@ -1,0 +1,24 @@
+{
+  "name": "techhub-2nd-project",
+  "version": "1.0.0",
+  "description": "https://lukasimonishvili.github.io/techHub-2nd-project/",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/styles/index.scss assets/css/index.css",
+    "build-watch": "nodemon -e scss -x \"npm run build-css\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasimonishvili/techHub-2nd-project.git"
+  },
+  "author": "luka && ana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasimonishvili/techHub-2nd-project/issues"
+  },
+  "homepage": "https://github.com/lukasimonishvili/techHub-2nd-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  }
+}
