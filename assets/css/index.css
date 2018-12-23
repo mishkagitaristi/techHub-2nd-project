@@ -200,7 +200,8 @@ html {
   .header__right-side {
     align-items: flex-start;
     width: 378px;
-    height: 65px; }
+    height: 65px;
+    margin-top: 1rem; }
     .header__right-side__column {
       height: 100%;
       align-items: flex-start; }
