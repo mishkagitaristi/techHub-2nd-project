@@ -1,0 +1,22 @@
+.flex{
+	display: flex;
+}
+.flex-center{
+	display: flex;
+	align-items: center;
+}
+.flex-center-x2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-space-btw{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex-space-around{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
