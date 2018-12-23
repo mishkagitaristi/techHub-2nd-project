@@ -20,3 +20,20 @@
 	align-items: center;
 	justify-content: space-around;
 }
+.flex-column-center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.flex-column-space-btw{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex-column-space-around{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}

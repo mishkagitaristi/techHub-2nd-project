@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+    height: 82px;
+    border-bottom: $header-border;
+    background-image: $header-background;
+
+    &__left-side{
+        height: 100%;
+        width: 170px;
+        height: 34px;
+        
+        &__link{
+            width: 100%;
+            height: 100%;
+            background: url("../img/facebook.png");
+            background-position: 0 -49px;
+        }
+    }
+
+    &__right-side{
+        align-items: flex-start;
+        width: 378px;
+        height: 65px;
+
+        &__column{
+            height: 100%;
+            align-items: flex-start;
+
+            &__heading{
+                color: $header-main-text-color;
+                font-size: 1.2rem;
+                font-family: $helvetica;
+            }
+
+            &__input{
+                box-sizing: content-box;
+                width: 142px;
+                height: 14px;
+                padding: .3rem .3rem .4rem .3rem;
+                border: $header-border;
+            }
+
+            &__link{
+                color: $forgot-color;
+                font-family: $helvetica;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
+
+            &__link:hover{
+                text-decoration: underline;
+            }
+
+            &__button{
+                width: 36px;
+                box-sizing: content-box;
+                cursor: pointer;
+                color: $header-main-text-color;
+                font-family: $helvetica;
+                font-size: 1.2rem;
+                background-color: $header-button-background;
+                border: $header-button-border;
+                line-height: 1.8rem;
+                padding: .2rem .6rem;
+            }
+
+            &__button:hover{
+                background-color: $header-button-background-hover;
+            }
+
+            &__empty{
+                height: 16px;
+                width: 142px;
+            }
+        }
+    }
+}

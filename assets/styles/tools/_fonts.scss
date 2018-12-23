@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'SF UI Text';
+    font-family: 'SFUIText-Bold';
     src: url('../fonts/SFUIText-Bold.woff2') format('woff2'),
         url('SFUIText-Bold.woff') format('woff');
     font-weight: bold;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay-Thin';
     src: url('../fonts/SFProDisplay-Thin.woff2') format('woff2'),
         url('SFProDisplay-Thin.woff') format('woff');
     font-weight: 100;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'SF UI Text';
+    font-family: 'SFUIText-Regular';
     src: url('../fonts/SFUIText-Regular.woff2') format('woff2'),
         url('SFUIText-Regular.woff') format('woff');
     font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'SF UI Text';
+    font-family: 'SFUIText-Semibold';
     src: url('../fonts/SFUIText-Semibold.woff2') format('woff2'),
         url('SFUIText-Semibold.woff') format('woff');
     font-weight: 600;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Text';
+    font-family: 'SFProText-Regular';
     src: url('../fonts/SFProText-Regular.woff2') format('woff2'),
         url('SFProText-Regular.woff') format('woff');
     font-weight: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'SF UI Text';
+    font-family: 'SFUIText-Light';
     src: url('../fonts/SFUIText-Light.woff2') format('woff2'),
         url('SFUIText-Light.woff') format('woff');
     font-weight: 300;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Text';
+    font-family: 'SFProText-Light';
     src: url('../fonts/SFProText-Light.woff2') format('woff2'),
         url('SFProText-Light.woff') format('woff');
     font-weight: 300;
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay-Regular';
     src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
         url('SFProDisplay-Regular.woff') format('woff');
     font-weight: normal;
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay-Semibold';
     src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
         url('SFProDisplay-Semibold.woff') format('woff');
     font-weight: 600;
@@ -71,10 +71,17 @@
 }
 
 @font-face {
-    font-family: 'SF UI  Text';
+    font-family: 'SFUIText-Medium';
     src: url('../fonts/SFUIText-Medium.woff2') format('woff2'),
         url('SFUIText-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Helvetica-Normal';
+    src: url('../fonts/Helvetica-Normal.woff2') format('woff2'),
+        url('../fonts/Helvetica-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
