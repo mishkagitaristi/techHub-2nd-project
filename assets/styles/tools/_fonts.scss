@@ -85,3 +85,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/Freight-SansBold.woff2') format('woff2'),
+        url('../fonts/Freight-SansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
