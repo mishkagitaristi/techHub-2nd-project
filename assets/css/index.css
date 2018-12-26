@@ -296,3 +296,96 @@ html {
           line-height: 2.3rem;
           font-family: "Freight";
           color: #333; }
+      .main__content__right-side__input-box {
+        height: 15.57vh; }
+        .main__content__right-side__input-box__name-box {
+          width: 399px; }
+          .main__content__right-side__input-box__name-box__input {
+            box-sizing: content-box;
+            width: 172px;
+            height: 21px;
+            padding: .8rem 1rem;
+            border-radius: 5px;
+            border: 1px solid #bdc7d8;
+            font-size: 1.8rem;
+            font-family: "Helvetica-Normal"; }
+        .main__content__right-side__input-box__input {
+          box-sizing: content-box;
+          width: 377px;
+          height: 21px;
+          padding: .8rem 1rem;
+          border-radius: 5px;
+          border: 1px solid #bdc7d8;
+          font-size: 1.8rem;
+          font-family: "Helvetica-Normal"; }
+      .main__content__right-side__birthdate-box {
+        align-items: flex-start;
+        height: 6.8vh; }
+        .main__content__right-side__birthdate-box__heading {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+          font-family: "Helvetica-Normal";
+          color: #1d2129; }
+        .main__content__right-side__birthdate-box__selects {
+          width: 352px; }
+          .main__content__right-side__birthdate-box__selects__item {
+            height: 30px;
+            padding: .5rem;
+            font-size: 1.3rem;
+            font-family: "Helvetica-Normal";
+            border: 1px solid #bdc7d8; }
+          .main__content__right-side__birthdate-box__selects__link {
+            line-height: 1.4rem;
+            font-size: 1.1rem;
+            font-family: "Helvetica-Normal";
+            color: #365899; }
+          .main__content__right-side__birthdate-box__selects__link:hover {
+            text-decoration: underline; }
+      .main__content__right-side__gender {
+        width: 185px; }
+        .main__content__right-side__gender__item {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          padding: 0 1rem 0 .3rem;
+          font-family: "Helvetica-Normal";
+          color: #1d2129; }
+      .main__content__right-side__rules {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        font-family: "Helvetica-Normal";
+        color: #777; }
+        .main__content__right-side__rules__span {
+          color: #365899;
+          cursor: pointer; }
+        .main__content__right-side__rules__span:hover {
+          text-decoration: underline; }
+      .main__content__right-side__submit {
+        box-sizing: content-box;
+        width: 152px;
+        height: 23px;
+        padding: .7rem 2rem;
+        border: 1px solid #3b6e22;
+        background: linear-gradient(#67ae55, #578843);
+        cursor: pointer;
+        color: #fff;
+        font-family: "Freight";
+        border-radius: 5px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 1.9rem; }
+      .main__content__right-side__line {
+        width: 100%;
+        height: 1px;
+        background-color: #dddfe2; }
+      .main__content__right-side__create-pages {
+        font-family: "Helvetica-Normal";
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: #365899;
+        cursor: pointer; }
+      .main__content__right-side__span {
+        color: #666;
+        font-family: "Helvetica-Normal";
+        font-size: 1.3rem;
+        line-height: 1.7rem; }
+      .main__content__right-side__create-pages:hover {
+        text-decoration: underline; }

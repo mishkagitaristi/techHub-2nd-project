@@ -1,8 +1,8 @@
 .header {
     width: 100%;
     height: 9.41vh;
-    border-bottom: $header-border;
-    background-image: $header-background;
+    border-bottom: $unlogined-header-border;
+    background-image: $unlogined-header-background;
 
     &__left-side{
         height: 100%;
@@ -28,7 +28,7 @@
             align-items: flex-start;
 
             &__heading{
-                color: $header-main-text-color;
+                color: $unlogined-header-main-text-color;
                 font-size: 1.2rem;
                 font-family: $helvetica;
             }
@@ -38,11 +38,11 @@
                 width: 142px;
                 height: 14px;
                 padding: .3rem .3rem .4rem .3rem;
-                border: $header-border;
+                border: $unlogined-header-border;
             }
 
             &__link{
-                color: $forgot-color;
+                color: $unlogined-forgot-color;
                 font-family: $helvetica;
                 font-size: 1.2rem;
                 line-height: 1.6rem;
@@ -56,17 +56,17 @@
                 width: 36px;
                 box-sizing: content-box;
                 cursor: pointer;
-                color: $header-main-text-color;
+                color: $unlogined-header-main-text-color;
                 font-family: $helvetica;
                 font-size: 1.2rem;
-                background-color: $header-button-background;
-                border: $header-button-border;
+                background-color: $unlogined-header-button-background;
+                border: $unlogined-header-button-border;
                 line-height: 1.8rem;
                 padding: .2rem .6rem;
             }
 
             &__button:hover{
-                background-color: $header-button-background-hover;
+                background-color: $unlogined-header-button-background-hover;
             }
 
             &__empty{

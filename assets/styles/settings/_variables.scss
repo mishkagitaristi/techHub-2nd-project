@@ -15,17 +15,29 @@ $freight: 'Freight';
 
 //   H E A D E R     U N L O G I N E D
 
-$header-background: linear-gradient(#4e69a2, #3b5998 50%);
-$header-border: 1px solid #133783;
-$header-input-border: 1px solid #1d2a5b;
-$forgot-color: #9cb4d8;
-$header-button-background: #4267b2;
-$header-button-background-hover: #365899;
-$header-button-border: 1px solid #29487d;
-$header-main-text-color: #fff;
+$unlogined-header-background: linear-gradient(#4e69a2, #3b5998 50%);
+$unlogined-header-border: 1px solid #133783;
+$unlogined-header-input-border: 1px solid #1d2a5b;
+$unlogined-forgot-color: #9cb4d8;
+$unlogined-header-button-background: #4267b2;
+$unlogined-header-button-background-hover: #365899;
+$unlogined-header-button-border: 1px solid #29487d;
+$unlogined-header-main-text-color: #fff;
 
 //      M A I N   U N L O G I N E D
 
-$main-background: #edf0f5;
-$main-primary-text-color: #333;
-$main-left-side-secondary-text-color: #666;
+$unlogined-main-background: #edf0f5;
+$unlogined-main-primary-text-color: #333;
+$unlogined-main-left-side-secondary-text-color: #666;
+$unlogined-main-left-side-registation-border: 1px solid #bdc7d8;
+$unlogined-main-birthday-color: #1d2129;
+$unlogined-main-select-border: 1px solid #bdc7d8;
+$unlogined-link-default-color: #365899;
+$unlogined-main-gender-color: #1d2129;
+$unlogined-main-rules-color: #777;
+$unlogined-main-submit-border: 1px solid #3b6e22;
+$unlogined-main-submit-background: linear-gradient(#67ae55, #578843);
+$unlogined-main-submit-color: #fff;
+$unlogined-main-submit-text-shadow: 0 1px 2px rgba(0,0,0,.5);
+$unlogined-main-right-side-line: #dddfe2;
+$Unlogined-main-create-pages-secondary-color: #666;
