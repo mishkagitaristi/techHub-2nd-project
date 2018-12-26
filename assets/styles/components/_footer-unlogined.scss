@@ -1,0 +1,88 @@
+.footer{
+    width: 100%;
+    height: 28.8vh;
+
+    &__content{
+        align-items: flex-start;
+        width: 100%;
+        height: 128px;
+
+        &__lang{
+            width: 766px;
+            height: 20px;
+
+            &__active{
+                font-family: $helvetica;
+                color: $unogined-footer-active-lang-color;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                cursor: pointer;
+            }
+
+            &__list{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                font-family: $helvetica;
+                color: $unlogined-footer-primary-color;
+                cursor: pointer;
+            }
+
+            &__list:hover{
+                text-decoration: underline;
+            }
+
+            &__more{
+                width: 30px;
+                height: 100%;
+                padding: 0 .8rem;
+                border: $unlogined-footer-more-lang-border;
+                background-color: $unlogined-footer-more-lang-background;
+                cursor: pointer;
+
+                &__img{
+                    width: 12px;
+                    height: 12px;
+                    background: url("../img/facebook.png");
+                    background-position: -66px -84px;
+                }
+            }
+        }
+
+        &__line{
+            background-color: $unlogined-footer-line-color;
+            width: 100%;
+            height: 1px;
+        }
+
+        &__tools{
+            flex-wrap: wrap;
+            width: 100%;
+
+            &__item{
+                font-family: $helvetica;
+                line-height: 1.9rem;
+                color: $unlogined-footer-primary-color;
+                font-size: 1.2rem;
+                margin-right: 1.8rem;
+
+                &__img{
+                    width: 16px;
+                    height: 16px;
+                    background: url("../img/facebook.png");
+                    background-position: -17px -84px;
+                }
+            }
+
+            &__item:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        &__terms{
+            font-size: 1.1rem;
+            color: $unlogined-footer-terms-color;
+            font-family: $helvetica;
+        }
+    }
+}
