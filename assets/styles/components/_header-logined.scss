@@ -23,7 +23,7 @@
     }
 
     &__search {
-        width: 587px;
+        width: 450;
         height: 42px;
         margin-left: 7px;
         float: left;
@@ -79,7 +79,7 @@
     &__text {
         width: auto;
         height: 42px;
-        float: right;
+        float: left;
     }
 
     &__text--list__element { 
@@ -112,14 +112,24 @@
         height: 42px;
         padding-left: 4px;
         padding-right: 5px;
-        float: left;
+        float: right;
+
+        &--list {
+            width: 108px;
+            height: 42px;
+
+            &__element {
+                width: 36px;
+                height: 42px;
+            }
+        }
     }
 
     &__settings {
         width: 71px;
         height: 42px;
         padding-left: 4px;
-        float: left;
+        float: right;
     }
 }
 
