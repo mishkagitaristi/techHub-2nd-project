@@ -5,58 +5,146 @@
     <title>Facebook</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="SHORTCUT ICON" href="assets/img/facebook-title.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="header__logo"><i class="fab fa-facebook"></i></div>
-            <div class="header__search">
-                <div class="header__search--block">
-                    <input class="header__search--input" type="search" placeholder="search">
-                    <div class="header__search--icon"><button class="header__search__button"><i class="fa fa-search"></i></button></div>
+    <header class="header fixed">
+        <div class="container flex-space-btw">
+            <div class="header__left-side flex-space-btw">
+                <a href="logined.html">
+                    <img src="assets/img/logined-logo.png" alt="" class="header__left-side__img">
+                </a>
+                <div class="header__left-side__input-box flex">
+                    <input type="text" class="header__left-side__input-box__input">
+                    <button type="button" class="header__left-side__input-box__button flex-center-x2">
+                        <img src="assets/img/logined-search-icon.png" alt="">
+                    </button>
                 </div>
             </div>
-            
-            
-                    <div class="header__text">
-                        <ul class="header__text--list">
-                            <li class="header__text--list__element">
-                                <img src="https://www.elastic.co/assets/bltada7771f270d08f6/enhanced-buzz-1492-1379411828-15.jpg" class="header__text--list__element--img"/>
-                                <span>Name</span>
-                            </li>
-                            <li class="header__text--list__element">Home</li>
-                            <li class="header__text--list__element">Find Friends</li>
-                        </ul>
-                    </div>
-            
-                    <div class="header__notifications">
-                        <ul class="header__notifications--list">
-                            <li class="header__notifications--list__element"><i class="fas fa-user-friends"></i></li>
-                            <li class="header__notifications--list__element"><i class="fab fa-facebook-messenger"></i></li>
-                            <li class="header__notifications--list__element"><i class="fas fa-bell"></i></li>
-                        </ul>
-                    </div>
-            
-                    <div class="header__settings">
-                        <ul class="header__settings--list">
-                            <li class="header__settings--list__element"></li>
-                            <li class="header__settings--list"></li>
-                        </ul>
-                    </div>
-                    
+            <div class="header__right-side flex-center">
+                <div class="header__right-side__profile-picture"></div>
+                <p class="header__right-side__text-style">name</p>
+                <div class="header__right-side__line"></div>
+                <p class="header__right-side__text-style">home</p>
+                <div class="header__right-side__line"></div>
+                <p class="header__right-side__text-style">find friends</p>
+                <div class="header__right-side__line"></div>
+                <div class="header__right-side__friend-request header__right-side__logos"></div>
+                <div class="header__right-side__messages header__right-side__logos"></div>
+                <div class="header__right-side__notifications header__right-side__logos"></div>
+                <div class="header__right-side__line"></div>
+                <div class="header__right-side__help header__right-side__logos"></div>
+                <div class="header__right-side__log-out header__right-side__logos"></div>
+            </div>
         </div>
     </header>
-
-    <main class="content">
-        <div class="content__main-body">
-            <div class="content__main-body__left-menu"></div>
-            <div class="content__main-body__scrollable"></div>
+    <nav class="navigation fixed">
+        <div class="container flex-space-btw">
+            <ul class="navigation__left-side flex-space-btw">
+                <li class="navigation__left-side__item navigation__left-side__item__active">page</li>
+                <li class="navigation__left-side__item">inbox</li>
+                <li class="navigation__left-side__item">notifications</li>
+                <li class="navigation__left-side__item">insights</li>
+                <li class="navigation__left-side__item">publishing tools</li>
+                <li class="navigation__left-side__item">ad center</li>
+            </ul>
+            <ul class="navigation__right-side flex-space-btw">
+                <li class="navigation__right-side__item">settings</li>
+                <div class="flex-center">
+                    <li class="navigation__right-side__item">help</li>
+                    <img src="assets/img/logined-navigation-drop-down.png" class="navigation__right-side__img" alt="">
+                </div>
+            </ul>
         </div>
-        <div class="content__friend-list"></div>
+    </nav>
+    <main class="main">
+        <div class="main__wrapper flex">
+            <div class="main__left-side">
+                <div class="main__left-side__profile-picture"></div>
+                <ul class="main__left-side__list">
+                    <li class="main__left-side__list__item main__left-side__list__item__active">home</li>
+                    <li class="main__left-side__list__item">events</li>
+                    <li class="main__left-side__list__item">reviews</li>
+                    <li class="main__left-side__list__item">about</li>
+                    <li class="main__left-side__list__item">videos</li>
+                    <li class="main__left-side__list__item">photos</li>
+                    <li class="main__left-side__list__item">posts</li>
+                    <li class="main__left-side__list__item">jobs</li>
+                    <li class="main__left-side__list__item">community</li>
+                    <li class="main__left-side__list__item">info and ads</li>
+                </ul>
+                <div class="main__left-side__promote">
+                    <a href="#" class="main__left-side__promote__1st">Promote</a>
+                    <a href="#" class="main__left-side__promote__2nd">Manage Promotions</a>
+                </div>
+            </div>
+            <div class="main__right-side">
+                <div class="main__right-side__cover"></div>
+                <div class="main__right-side__content flex-space-btw">
+                    <div class="main__right-side__content__left-side">
+                        <div class="main__right-side__content__left-side__make-post">
+                            <div class="flex-center">
+                                <div class="main__right-side__content__left-side__make-post__top-buttons main__right-side__content__left-side__make-post__pen-icon"></div>
+                                <p class="main__right-side__content__left-side__make-post__top-text">Create Post</p>
+                                <div class="main__right-side__content__left-side__make-post__line"></div>
+                                <div class="main__right-side__content__left-side__make-post__top-buttons2 main__right-side__content__left-side__make-post__live-icon"></div>
+                                <p class="main__right-side__content__left-side__make-post__top-text">Live Video</p>
+                                <div class="main__right-side__content__left-side__make-post__line"></div>
+                                <div class="main__right-side__content__left-side__make-post__top-buttons2 main__right-side__content__left-side__make-post__photo-icon"></div>
+                                <p class="main__right-side__content__left-side__make-post__top-text">Photo/Video</p>
+                                <div class="main__right-side__content__left-side__make-post__line"></div>
+                                <div class="main__right-side__content__left-side__make-post__top-buttons2 main__right-side__content__left-side__make-post__event-icon"></div>
+                                <p class="main__right-side__content__left-side__make-post__top-text">Life Event</p>
+                            </div>
+                            <div class="main__right-side__content__left-side__make-post__big-line relative">
+                                <div class="main__right-side__content__left-side__make-post__big-line__triangle absolute">
+                                    <div class="main__right-side__content__left-side__make-post__big-line__triangle__left absolute"></div>
+                                    <div class="main__right-side__content__left-side__make-post__big-line__triangle__right absolute"></div>
+                                </div>
+                            </div>
+                            <div class="main__right-side__content__left-side__make-post__input-box flex-center">
+                                <div class="main__right-side__content__left-side__make-post__input-box__profile-picture"></div>
+                                <textarea placeholder="Write a post..." name="post" class="flex-center main__right-side__content__left-side__make-post__input-box__textarea"></textarea>
+                            </div>
+                            <div class="main__right-side__content__left-side__make-post__big-line"></div>
+                            <div class="flex-center">
+                                <div class="main__right-side__content__left-side__make-post__button-box flex-center">
+                                    <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__photo"></div>
+                                    <p class="main__right-side__content__left-side__make-post__button-box__text">Photo/Video</p>
+                                </div>
+                                <div class="main__right-side__content__left-side__make-post__button-box flex-center">
+                                    <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__tag"></div>
+                                    <p class="main__right-side__content__left-side__make-post__button-box__text">Tag Friends</p>
+                                </div>
+                                <div class="main__right-side__content__left-side__make-post__button-box flex-center">
+                                    <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__feeling"></div>
+                                    <p class="main__right-side__content__left-side__make-post__button-box__text">Feeling/Activ...</p>
+                                </div>
+                                <div class="main__right-side__content__left-side__make-post__button-box flex-center">
+                                    <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__dots"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right-side__content__right-side">
+                        <div class="main__right-side__content__right-side__heading-box flex-space-btw">
+                            <h3 class="main__right-side__content__right-side__heading-box__heading">Community</h3>
+                            <a href="#" class="main__right-side__content__right-side__heading-box__link">See All</a>
+                        </div>
+                        <div class="flex-center main__right-side__content__right-side__row">
+                            <img src="assets/img/comunity-like.png" alt="" class="main__right-side__content__right-side__row__img">
+                            <p class="main__right-side__content__right-side__row__text">150 people like this</p>
+                        </div>
+                        <div class="flex-center main__right-side__content__right-side__row">
+                            <img src="assets/img/comunity-follow.png" alt="" class="main__right-side__content__right-side__row__img">
+                            <p class="main__right-side__content__right-side__row__text">150 people follow this</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-            
+    <section class="chat fixed">
+        <h3 class="chat__heading">CONATCTS</h3>
+    </section>
 </body>
 </html>
-

@@ -1,135 +1,103 @@
-
-.header {
+.header{
     width: 100%;
-    height: 42px;
-    background: $logined-header-main-color;
+    height: 62px;
+    background-color: $logined-header-background;
+    top: 0;
+    z-index: 100;
 
-    &__wrapper {
-        width: 1012px;
-        margin: 0 auto;
-    }
+    &__left-side{
+        width: 483px;
+        height: auto;
 
-    &__container {
-        width: 100%;
-        height: 42px;
-        background: $logined-header-main-color;
-    }
-
-    &__logo {
-        margin-top: 8px;
-        color: $logined-header-logo-color;
-        font-size: 25px;
-        float: left;
-    }
-
-    &__search {
-        width: 450;
-        height: 42px;
-        margin-left: 7px;
-        float: left;
-        
-        &--block {
-            width: 448px;
-            height: 42px;
+        &__img{
+            cursor: pointer;
+            margin-top: 3px;
         }
 
-        &--input {
-            width: 393px;
-            margin-top: 9px;
-            padding-left: 5px;
-            height: 23px;
-            float: left;
-            border-top-left-radius: 3px;
-            border-bottom-left-radius: 3px;
-            border: none;
-            outline: 0;
-            text-transform: capitalize;
-        }
+        &__input-box{
+            border-radius: 5px;
+            height: 24px;
+            width: 446px;
+            background-color: $logined-header-input-box-background;
 
-        
-        ::placeholder {
-            color: $logined-header-placeholder-color;
-            opacity: 0.4;
-        }
+            &__input{
+                border-radius: 5px 0 0 5px;
+                background-color: transparent;
+                height: 100%;
+                width: 400px;
+                padding-left: .5rem;
+            }
 
-
-        
-        &--icon {
-            width: 46px;
-            height: 23px;
-            margin-top: 9px;
-            float: left;
-            background: $logined-header-input-icon-beckgr-color;
-            color: $logined-header-input-icon-color;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-    
-        }
-    
-    
-        &__button {
-            width: 46px;
-            height: 23px;
-            border: none;
-            outline: 0;
-        }
-    }
-
-
-    &__text {
-        width: auto;
-        height: 42px;
-        float: left;
-    }
-
-    &__text--list__element { 
-        height: 24px;
-        line-height: 24px;
-        margin-top: 8px;
-        padding-left: 12px;
-        padding-right: 11px;
-        list-style: none;
-        float: left;
-        color: $logined-header-logo-color;
-        font-family: helvetica;
-        font-size: 13px;
-        font-weight: bold;
-        border-right: 1px solid $unlogined-footer-primary-color;
-        
-    }
-
-    &__text--list__element img {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        vertical-align: middle;
-        line-height: 24px;
-        
-    }
-
-    &__notifications {
-        width: 108px;
-        height: 42px;
-        padding-left: 4px;
-        padding-right: 5px;
-        float: right;
-
-        &--list {
-            width: 108px;
-            height: 42px;
-
-            &__element {
-                width: 36px;
-                height: 42px;
+            &__button{
+                border-radius: 0 5px 5px 0;
+                width: calc(100% - 400px);
+                height: 100%;
+                background-color: $logined-header-input-box-button-background;
+                cursor: pointer;
             }
         }
     }
 
-    &__settings {
-        width: 71px;
-        height: 42px;
-        padding-left: 4px;
-        float: right;
+    &__right-side{
+        background-color: transparent;
+
+        &__profile-picture{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: red;
+
+            & > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        &__text-style{
+            text-transform: capitalize;
+            color: $logined-header-text-color;
+            font-size: 1.2rem;
+            font-family: $sfui-text-regular;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+        &__line{
+            width: 1px;
+            height: 18px;
+            background-color: $logined-header-line-color;
+            margin-left:1rem;
+        }
+
+        &__logos{
+            background-image: url("../img/logined-header-logos.png");
+            margin-left: 1rem;
+            width: 24px;
+            height: 24px;
+            opacity: .6;
+            cursor: pointer;
+        }
+
+        &__friend-request{
+            background-position: 0 -892px;
+        }
+
+        &__messages{
+            background-position: 0 -942px;
+        }
+
+        &__notifications{
+            background-position: 0 -792px;
+        }
+
+        &__help{
+            background-position: 0 -992px;
+        }
+
+        &__log-out{
+            background-position: 0 -842px;
+        }
     }
 }
-

@@ -1,17 +1,308 @@
-.content {
+.main{
+    margin-top:113px;
+    width: 100%;
+    background-color: $logined-main-background-color;
 
-    &__main-body {
+    &__wrapper{
+        float: right;
+        margin-right: 215px;
+    }
 
-        &__left-menu {
+    &__left-side{
+        margin-top: 1.4rem;
 
+        &__profile-picture{
+            width: 180px;
+            height: 180px;
+            background: red;
+
+            & > img{
+                width: 100%;
+                height: 100%;
+            }
         }
 
-        &__scrollable {
+        &__list{
+            margin-top: 1.2rem;
+            width: 180px;
 
+            &__item{
+                margin-bottom: .2rem;
+                padding: .8rem 0 .8rem .8rem;
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                color: $logined-main-left-side-list-color;
+                font-size: 1.4rem;
+                font-family: $sfui-text-medium;
+                background-color: inherit;
+                border: $logined-main-left-side-list-border;
+                text-transform: capitalize;
+                border-radius: 5px;
+
+                &__active{
+                    background-color: $logined-main-left-side-list-active-background;
+                    border: $logined-main-left-side-list-active-border;
+                    font-family: $sfui-text-bold;
+                }
+
+                &:hover{
+                    background-color: $logined-main-left-side-list-active-background;
+                    border: $logined-main-left-side-list-active-border;
+                }
+            }
+        }
+
+        &__promote{
+            margin-top: 1.4rem;
+
+            &__1st{
+                box-sizing: content-box;
+                padding: .9rem 1rem;
+                background-color: $logined-main-left-side-promote-1st-background;
+                color: $logined-main-left-side-promote-1st-color;
+                font-family: $sfui-text-bold;
+                font-size: 1rem;
+                display: inline-block;
+            }
+
+            &__2nd{
+                display: block;
+                margin-top: 1rem;
+                color: $logined-main-left-side-list-color;
+                font-size: 1.4rem;
+                font-family: $sfui-text-medium;
+            }
         }
     }
 
-    &__friend-list {
+    &__right-side{
+        width: 820px;
+        margin-left: 1.2rem;
+        
+        &__cover{
+            width: 820px;
+            height: 305px;
+            background: green;
 
+            & > img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__content{
+            width: 100%;
+            align-items: flex-start;
+            margin-top: 1.2rem;
+
+            &__left-side{
+                width: 502px;
+
+                &__make-post{
+                    box-sizing: content-box;
+                    width: 478px;
+                    border-radius: 5px;
+                    border: $logined-main-content-border;
+                    padding: 1rem 1.2rem .8rem 1.2rem;
+                    background-color: $logined-main-content-background;
+
+                    &__line{
+                        width: 1px;
+                        height: 15px;
+                        background-color: $logined-main-make-post-top-line-color;
+                        margin: 0 1rem;
+                    }
+
+                    &__top-text{
+                        color: $logined-main-make-post-top-text-color;
+                        font-size: 1.2rem;
+                        font-family: $sfui-text-medium;
+                        cursor: pointer;
+                    }
+
+                    &__top-buttons{
+                        background-image: url("../img/make-post-top.png");
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                    }
+
+                    &__top-buttons2{
+                        background-image: url("../img/make-post-top2.png");
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                    }
+
+                    &__pen-icon{
+                        background-position: -17px -465px;
+                        margin-right: .5rem;
+                    }
+
+                    &__live-icon{
+                        background-position: -182px -237px;
+                        margin-right: .6rem;
+                    }
+
+                    &__photo-icon{
+                        background-position: -182px -504px;
+                        margin-right: .6rem;
+                    }
+
+                    &__event-icon{
+                        background-position: -34px -525px;
+                        margin-right: .6rem;
+                    }
+
+                    &__big-line{
+                        width: 100%;
+                        height: 1px;
+                        background-color: $logined-main-make-post-top-big-line-color;
+                        margin-top: 1rem;
+                        margin-bottom: 1.4rem;
+
+                        &__triangle{
+                            background-color: $logined-main-content-background;
+                            width: 5px;
+                            height: 8px;
+                            bottom: 0;
+                            left: 50px;
+
+                            &__left{
+                                bottom: 0;
+                                left: 0;
+                                background-color: $logined-main-make-post-top-big-line-color;
+                                width: 1px;
+                                height: 8px;
+                                transform: rotate(30deg);
+
+                            }
+
+                            &__right{
+                                bottom: 0;
+                                right: 0;
+                                background-color: $logined-main-make-post-top-big-line-color;
+                                width: 1px;
+                                height: 8px;
+                                transform: rotate(-30deg);
+                            }
+                        }
+                    }
+
+                    &__input-box{
+                        width: 100%;
+
+                        &__profile-picture{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            margin-right: 2.7rem;
+                            background: red;
+
+                            & > img{
+                                border-radius: 50%;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &__textarea{
+                            width: calc(100% - 66px);
+                            height: 45px;
+
+                            &::placeholder{
+                                font-family: $sfui-text-medium;
+                                color: $make-post-inpu-placeholder-color;
+                                line-height: 43px;
+                            }
+                        }
+                    }
+
+                    &__button-box{
+                        margin-right: .6rem;
+                        border-radius: 18px;
+                        cursor: pointer;
+                        padding: .7rem 1.3rem .7rem 1rem;
+                        background-color: $make-post-bottom-buttons-background;
+                        
+                        &__background{
+                            width: 20px;
+                            height: 20px;
+                            background-image: url("../img/make-post-bottom.png");
+                            margin-right: .7rem;
+                        }
+
+                        &__photo{
+                            background-position: 0 -863px;
+                        }
+
+                        &__tag{
+                            background-position: 0 -548px;
+                        }
+
+                        &__feeling{
+                            background-position: 0 -485px;
+                        }
+
+                        &__dots{
+                            margin: 0;
+                            background-position: 0 -1409px;
+                        }
+
+                        &__text{
+                            color: $make-post-bottom-buttons-text-color;
+                            font-family: $sfui-text-medium;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            &__right-side{
+                width: 310px;
+                box-sizing: border-box;
+                border: $logined-main-content-border;
+                padding: 1.3rem 1.5rem;
+                background-color: $logined-main-content-background;
+                border-radius: 5px;
+
+                &__heading-box{
+                    width: 100%;
+
+                    &__heading{
+                        font-family: $sfui-text-medium;
+                        color: $logined-main-right-side-primary-color;
+                        font-size: 1.4rem;
+                    }
+
+                    &__link{
+                        font-size: 1.2rem;
+                        color: $logined-main-right-side-link-color;
+                        font-family: $sfui-text-medium;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                &__row{
+                    margin-top: 1.8rem;
+
+                    &__img{
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 1.2rem;
+                    }
+
+                    &__text{
+                        color: $logined-main-right-side-primary-color;
+                        font-family: $sfui-text-medium;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
 }

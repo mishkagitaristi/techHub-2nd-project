@@ -57,8 +57,52 @@ $unlogined-footer-terms-color: #737373;
 
 //    H E A D E R   L O G I N E D
 
-$logined-header-main-color: #4267b2;
-$logined-header-logo-color: #ffffff;
-$logined-header-placeholder-color: #000000;
-$logined-header-input-icon-beckgr-color: #f5f6f7;
-$logined-header-input-icon-color: #575e6c;
+$logined-header-background: #4267b2;
+$logined-header-input-box-background: #fff;
+$logined-header-input-box-button-background: #f5f6f7;
+$logined-header-text-color: #fff;
+$logined-header-line-color: #3b5ca0;
+
+
+//   N A V I G A T I O N    L O G I N E D
+
+$logined-navigation-background: #fff;
+$logined-navigation-text-color: #4b4f56;
+$logined-navigation-active-border: 3px solid #4267b2;
+
+
+//   M A I N   L O G I N E D
+
+$logined-main-background-color: #e9ebee;
+$logined-main-left-side-list-color: #1d2129;
+$logined-main-left-side-list-active-background: #f5f6f7;
+$logined-main-left-side-list-border: 1px solid #e9ebee;
+$logined-main-left-side-list-active-border: 1px solid #dddfe2;
+$logined-main-left-side-promote-1st-background: #4267b2;
+$logined-main-left-side-promote-1st-color: #fff;
+$logined-main-content-border: 1px solid #dddfe2;
+$logined-main-content-background: #fff;
+$logined-main-make-post-top-text-color: #4b4f56;
+$logined-main-make-post-top-line-color: #dddfe2;
+$logined-main-make-post-top-big-line-color: #dddfe2;
+$make-post-inpu-placeholder-color: #a4a8ae;
+$make-post-bottom-buttons-background: #f5f6f7;
+$make-post-bottom-buttons-text-color: #4b4f56;
+$logined-main-right-side-primary-color: #000;
+$logined-main-right-side-link-color: #4267b2;
+
+
+// P O S T 
+
+$post-author-color: #0c53aa;
+$post-time-color: #77777a;
+$post-content-color: #000;
+
+
+//  C H A T
+
+$chat-border: 1px solid #ccc;
+$chat-heading-color: #4a4a4a;
+$chat-person-color: #333;
+$chat-active-icon-color: rgb(66, 183, 42);
+$chat-item-hover-background: #dddfe2;

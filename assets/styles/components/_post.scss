@@ -1,0 +1,50 @@
+.post{
+    margin-top: 1rem;
+    box-sizing: content-box;
+    width: 478px;
+    border-radius: 5px;
+    border: $logined-main-content-border;
+    background-color: $logined-main-content-background;
+    padding: 1rem 1.2rem .8rem 1.2rem;
+    position: relative;
+
+    &__img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: red;
+
+    }
+
+    &__author{
+        position: absolute;
+        top: 17px;
+        left: 60px;
+        color: $post-author-color;
+        font-size: 1.4rem;
+        font-family: $sfui-text-medium;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__time{
+        position: absolute;
+        left: 60px;
+        top: 35px;
+        font-size: 1.2rem;
+        color: $post-time-color;
+        font-family: $sfui-text-medium;
+    }
+
+    &__content{
+        margin-top: 1.2rem;
+        color: $post-content-color;
+        font-family: $sfui-text-medium;
+        font-size: 1.4rem;
+
+    }
+}
