@@ -1,0 +1,5 @@
+let Storage = {
+    check = function(){
+        
+    }
+}
