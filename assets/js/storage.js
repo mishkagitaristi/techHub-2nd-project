@@ -1,5 +1,0 @@
-let Storage = {
-    check = function(){
-        
-    }
-}

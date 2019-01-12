@@ -65,17 +65,17 @@
                     </div>
                     <div class="main__content__right-side__input-box flex-column-space-btw">
                         <div class="main__content__right-side__input-box__name-box">
-                            <input placeholder="First name" type="text" class="main__content__right-side__input-box__name-box__input">
-                            <input placeholder="Last name" type="text" class="main__content__right-side__input-box__name-box__input">
+                            <input id="name" placeholder="First name" type="text" class="main__content__right-side__input-box__name-box__input">
+                            <input id="lastName" placeholder="Last name" type="text" class="main__content__right-side__input-box__name-box__input">
                         </div>
-                        <input placeholder="Mobile number or email" type="text" class="main__content__right-side__input-box__input">
-                        <input placeholder="New password" type="password" class="main__content__right-side__input-box__input">
+                        <input id="mail" placeholder="Mobile number or email" type="text" class="main__content__right-side__input-box__input">
+                        <input id="password" placeholder="New password" type="password" class="main__content__right-side__input-box__input">
                     </div>
                     <div class="main__content__right-side__birthdate-box flex-column-space-btw">
                         <h5 class="main__content__right-side__birthdate-box__heading">Birthday</h5>
                         <div class="main__content__right-side__birthdate-box__selects flex-space-btw">
                             <div class="flex-center">
-                                <select name="month" class="main__content__right-side__birthdate-box__selects__item">
+                                <select id="month" name="month" class="main__content__right-side__birthdate-box__selects__item">
                                     <option value="Month">Month</option>
                                     <option value="Jan">Jan</option>
                                     <option value="Feb">Feb</option>
@@ -90,7 +90,7 @@
                                     <option value="Nov">Nov</option>
                                     <option value="Dec">Dec</option>
                                 </select>
-                                <select id="zd" name="day" class="main__content__right-side__birthdate-box__selects__item">
+                                <select id="day" name="day" class="main__content__right-side__birthdate-box__selects__item">
                                     <option value="Day">Day</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -124,7 +124,7 @@
                                     <option value="30">30</option>
                                     <option value="31">31</option>
                                 </select>
-                                <select name="year" class="main__content__right-side__birthdate-box__selects__item">
+                                <select id="year" name="year" class="main__content__right-side__birthdate-box__selects__item">
                                     <option value="Year">Year</option>
                                     <option value="2019">2019</option>
                                     <option value="2018">2018</option>
@@ -263,8 +263,8 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="assets/js/storage.js"></script>
     <script src="assets/mocks/user.js"></script>
-    <script src="assets/js/registration.js"></script> -->
+    <script src="assets/js/registration.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>

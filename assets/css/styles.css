@@ -588,3 +588,75 @@ html {
     height: 6px;
     background-color: #42b72a;
     border-radius: 50%; }
+  .chat__messenger {
+    width: auto;
+    height: auto;
+    z-index: 100;
+    bottom: 0;
+    right: 220px; }
+    .chat__messenger__box {
+      margin-left: 15px;
+      width: 284px;
+      height: 350px;
+      border-radius: 8px 8px 0 0;
+      border-top: 1px solid #dddfe2;
+      border-left: 1px solid #dddfe2;
+      border-right: 1px solid #dddfe2;
+      background-color: #fff;
+      position: relative; }
+      .chat__messenger__box__profile-picture {
+        margin-left: .8rem;
+        margin-top: .7rem;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        background: red;
+        display: inline-block; }
+      .chat__messenger__box__name {
+        position: absolute;
+        color: #1c1e21;
+        font-family: "SFUIText-Bold";
+        font-size: 1.3rem;
+        left: 45px;
+        top: 14px;
+        cursor: pointer; }
+        .chat__messenger__box__name:hover {
+          text-decoration: underline; }
+      .chat__messenger__box__close {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-image: url("../img/chat-close.png");
+        background-position: 0 -441px;
+        cursor: pointer;
+        top: 2px;
+        right: 2px; }
+      .chat__messenger__box__texts {
+        position: absolute;
+        top: 43px;
+        left: 0;
+        width: 100%;
+        height: 247px;
+        border-bottom: 1px solid #dddfe2;
+        border-top: 1px solid #dddfe2;
+        overflow-y: scroll; }
+      .chat__messenger__box__input {
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 58px;
+        width: 250px;
+        padding-left: .8rem; }
+      .chat__messenger__box::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/message-send.svg");
+        background-size: 16px 16px;
+        display: inline-block;
+        bottom: 16px;
+        right: 10px;
+        cursor: pointer; }

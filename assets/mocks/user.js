@@ -1,4 +1,4 @@
-let Users = [
+let test = [
     {
         name: "luka",
         lastName: "simonishvili",
@@ -6,7 +6,7 @@ let Users = [
         password: "luka",
         birthDay: {
             year: "1998",
-            mont: "may",
+            month: "may",
             day: "11"
         },
         gender: "male",
@@ -28,10 +28,20 @@ let Users = [
     }
 ]
 
-let Storage = {
-    check = function(){
-        
+
+let Users = {
+    storage: JSON.parse(localStorage.getItem("users")),
+    check: function(){
+        if(Users.storage == null){
+            let starterStorage = [];
+            starterStorage.push(test[0]);
+            localStorage.setItem("users", JSON.stringify(starterStorage));
+            Users.storage = JSON.parse(localStorage.getItem("users"));
+        }
+    },
+    resetStorage: function(){
+        localStorage.removeItem("users");
+        localStorage.setItem("users", JSON.stringify(Users.storage));
     }
 }
-
-let usersStorage = JSON.parse(localStorage.getItem("users"));
+Users.check();
