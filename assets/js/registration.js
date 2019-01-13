@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 let Registration = {
     button: document.getElementById("registration"),
     mail: document.getElementById("mail"),

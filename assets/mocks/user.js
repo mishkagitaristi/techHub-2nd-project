@@ -1,4 +1,4 @@
-let test = [
+let indexZeroUser = [
     {
         name: "luka",
         lastName: "simonishvili",
@@ -34,7 +34,7 @@ let Users = {
     check: function(){
         if(Users.storage == null){
             let starterStorage = [];
-            starterStorage.push(test[0]);
+            starterStorage.push(indexZeroUser[0]);
             localStorage.setItem("users", JSON.stringify(starterStorage));
             Users.storage = JSON.parse(localStorage.getItem("users"));
         }
