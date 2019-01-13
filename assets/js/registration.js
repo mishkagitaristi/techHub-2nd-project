@@ -42,8 +42,8 @@ let Registration = {
                         },
                         gender: Registration.gender,
                         friends: [],
-                        profilePicture: "",
-                        coverPicture: "",
+                        profilePicture: [""],
+                        coverPicture: [""],
                         posts: []
                     }
                 );

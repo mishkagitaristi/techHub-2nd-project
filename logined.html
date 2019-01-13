@@ -21,8 +21,8 @@
                 </div>
             </div>
             <div class="header__right-side flex-center">
-                <div class="header__right-side__profile-picture"></div>
-                <p class="header__right-side__text-style">name</p>
+                <div id="headerProfilePicture" class="header__right-side__profile-picture"></div>
+                <p id="headerName" class="header__right-side__text-style">name</p>
                 <div class="header__right-side__line"></div>
                 <p class="header__right-side__text-style">home</p>
                 <div class="header__right-side__line"></div>
@@ -59,7 +59,7 @@
     <main class="main">
         <div class="main__wrapper flex">
             <div class="main__left-side">
-                <div class="main__left-side__profile-picture"></div>
+                <div id="profilePicture" class="main__left-side__profile-picture"></div>
                 <ul class="main__left-side__list">
                     <li class="main__left-side__list__item main__left-side__list__item__active">home</li>
                     <li class="main__left-side__list__item">events</li>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="main__right-side">
-                <div class="main__right-side__cover"></div>
+                <div id="cover" class="main__right-side__cover"></div>
                 <div class="main__right-side__content flex-space-btw">
                     <div class="main__right-side__content__left-side">
                         <div class="main__right-side__content__left-side__make-post">
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="main__right-side__content__left-side__make-post__input-box flex-center">
-                                <div class="main__right-side__content__left-side__make-post__input-box__profile-picture"></div>
+                                <div id="makePostProfile" class="main__right-side__content__left-side__make-post__input-box__profile-picture"></div>
                                 <textarea placeholder="Write a post..." name="post" class="flex-center main__right-side__content__left-side__make-post__input-box__textarea"></textarea>
                             </div>
                             <div class="main__right-side__content__left-side__make-post__big-line"></div>
@@ -168,5 +168,6 @@
     </section>
     <script src="assets/mocks/user.js"></script>
     <script src="assets/js/logout.js"></script>
+    <script src="assets/js/pictures.js"></script>
 </body>
 </html>

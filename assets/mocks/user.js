@@ -9,7 +9,7 @@ let indexZeroUser = [
             month: "may",
             day: "11"
         },
-        gender: "male",
+        gender: "Male",
         friends: [
             {
                 name: "beqa",
@@ -17,8 +17,8 @@ let indexZeroUser = [
                 chat: []
             }
         ],
-        profilePicture: "",
-        coverPicture: "",
+        profilePicture: [""],
+        coverPicture: [""],
         posts: [
             {
                 date: "",

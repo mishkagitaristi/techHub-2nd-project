@@ -14,7 +14,7 @@
         &__profile-picture{
             width: 180px;
             height: 180px;
-            background: red;
+            cursor: pointer;
 
             & > img{
                 width: 100%;
@@ -83,7 +83,8 @@
         &__cover{
             width: 820px;
             height: 305px;
-            background: green;
+            cursor: pointer;
+            background-color: #1c1e21;
 
             & > img{
                 width: 100%;
@@ -198,7 +199,6 @@
                             height: 40px;
                             border-radius: 50%;
                             margin-right: 2.7rem;
-                            background: red;
 
                             & > img{
                                 border-radius: 50%;

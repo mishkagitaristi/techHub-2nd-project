@@ -11,18 +11,15 @@ let LogIn = {
             for(let i = 0; i < Users.storage.length; i++){
                 if(LogIn.mail.value == Users.storage[i].eMail){
                     LogIn.mailStatus = true;
-                    break;
-                }
-            }
-            for(let i = 0; i < Users.storage.length; i++){
-                if(LogIn.password.value == Users.storage[i].password){
-                    LogIn.passwordStatus = true;
                     LogIn.userIndex = i;
                     break;
                 }
             }
+            if(LogIn.password.value == Users.storage[LogIn.userIndex].password){
+                LogIn.passwordStatus = true;
+            }
             if(LogIn.mailStatus == true && LogIn.passwordStatus == true){
-                window.location.replace( "logined.html");
+                window.location.replace("logined.html");
                 LogIn.passwordStatus = false;
                 LogIn.mailStatus = false;
                 localStorage.setItem("userIndex", LogIn.userIndex);
@@ -32,5 +29,4 @@ let LogIn = {
         });
     },
 }
-
 LogIn.action();

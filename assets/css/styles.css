@@ -226,8 +226,7 @@ html {
     .header__right-side__profile-picture {
       width: 24px;
       height: 24px;
-      border-radius: 50%;
-      background: red; }
+      border-radius: 50%; }
       .header__right-side__profile-picture > img {
         width: 100%;
         height: 100%;
@@ -312,7 +311,7 @@ html {
     .main__left-side__profile-picture {
       width: 180px;
       height: 180px;
-      background: red; }
+      cursor: pointer; }
       .main__left-side__profile-picture > img {
         width: 100%;
         height: 100%; }
@@ -361,7 +360,8 @@ html {
     .main__right-side__cover {
       width: 820px;
       height: 305px;
-      background: green; }
+      cursor: pointer;
+      background-color: #1c1e21; }
       .main__right-side__cover > img {
         width: 100%;
         height: 100%; }
@@ -442,8 +442,7 @@ html {
               width: 40px;
               height: 40px;
               border-radius: 50%;
-              margin-right: 2.7rem;
-              background: red; }
+              margin-right: 2.7rem; }
               .main__right-side__content__left-side__make-post__input-box__profile-picture > img {
                 border-radius: 50%;
                 width: 100%;
