@@ -16,13 +16,17 @@ let Pictures = {
     renderProfile: function(){
         if(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1] == "" || Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1] == null){
             if(Users.storage[Pictures.userIndex].gender == "Female"){
-                Pictures.profile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/1402926_10150004552801901_469209496895221757_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=10922c8e96a492b8ffb27dc29c14b7bf&oe=5CC1EE52"));
-                Pictures.headerProfile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/1402926_10150004552801901_469209496895221757_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=10922c8e96a492b8ffb27dc29c14b7bf&oe=5CC1EE52"));
-                Pictures.makePostProfile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/1402926_10150004552801901_469209496895221757_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=10922c8e96a492b8ffb27dc29c14b7bf&oe=5CC1EE52"));
+                Users.storage[Pictures.userIndex].profilePicture.push("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/1402926_10150004552801901_469209496895221757_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=10922c8e96a492b8ffb27dc29c14b7bf&oe=5CC1EE52");
+                Users.resetStorage();
+                Pictures.profile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
+                Pictures.headerProfile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
+                Pictures.makePostProfile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
             }else if(Users.storage[Pictures.userIndex].gender == "Male"){
-                Pictures.profile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=33ec19f96e1ecb32d33ce930644e333e&oe=5CCA7569"));
-                Pictures.headerProfile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=33ec19f96e1ecb32d33ce930644e333e&oe=5CCA7569"));
-                Pictures.makePostProfile.appendChild(Pictures.starterProfile("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=33ec19f96e1ecb32d33ce930644e333e&oe=5CCA7569"));
+                Users.storage[Pictures.userIndex].profilePicture.push("https://scontent.fgyd4-2.fna.fbcdn.net/v/t31.0-1/c282.0.960.960a/p960x960/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fgyd4-2.fna&oh=33ec19f96e1ecb32d33ce930644e333e&oe=5CCA7569");
+                Users.resetStorage();
+                Pictures.profile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
+                Pictures.headerProfile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
+                Pictures.makePostProfile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));
             }
         }else{
             Pictures.profile.appendChild(Pictures.starterProfile(Users.storage[Pictures.userIndex].profilePicture[Users.storage[Pictures.userIndex].profilePicture.length - 1]));

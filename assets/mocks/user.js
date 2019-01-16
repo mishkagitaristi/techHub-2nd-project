@@ -19,12 +19,7 @@ let indexZeroUser = [
         ],
         profilePicture: [""],
         coverPicture: [""],
-        posts: [
-            {
-                date: "",
-                content: "",
-            }
-        ]
+        posts: []
     }
 ]
 

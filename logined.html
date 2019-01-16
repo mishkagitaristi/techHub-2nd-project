@@ -80,7 +80,7 @@
             <div class="main__right-side">
                 <div id="cover" class="main__right-side__cover"></div>
                 <div class="main__right-side__content flex-space-btw">
-                    <div class="main__right-side__content__left-side">
+                    <div class="main__right-side__content__left-side ">
                         <div class="main__right-side__content__left-side__make-post">
                             <div class="flex-center">
                                 <div class="main__right-side__content__left-side__make-post__top-buttons main__right-side__content__left-side__make-post__pen-icon"></div>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="main__right-side__content__left-side__make-post__input-box flex-center">
                                 <div id="makePostProfile" class="main__right-side__content__left-side__make-post__input-box__profile-picture"></div>
-                                <textarea placeholder="Write a post..." name="post" class="flex-center main__right-side__content__left-side__make-post__input-box__textarea"></textarea>
+                                <textarea id="newPost" placeholder="Write a post..." name="post" class="flex-center main__right-side__content__left-side__make-post__input-box__textarea"></textarea>
                             </div>
                             <div class="main__right-side__content__left-side__make-post__big-line"></div>
                             <div class="flex-center">
@@ -119,17 +119,11 @@
                                     <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__feeling"></div>
                                     <p class="main__right-side__content__left-side__make-post__button-box__text">Feeling/Activ...</p>
                                 </div>
-                                <div class="main__right-side__content__left-side__make-post__button-box flex-center">
-                                    <div class="main__right-side__content__left-side__make-post__button-box__background main__right-side__content__left-side__make-post__button-box__dots"></div>
-                                </div>
+                                <p id="share" class="main__left-side__promote__1st" style="border-radius: 18px; cursor: pointer;">Share</p>
                             </div>
                         </div>
-                        <!-- <div class="post">
-                            <div class="post__img"></div>
-                            <p class="post__author">name lastname</p>
-                            <p class="post__time">september 21 10:12 PM</p>
-                            <p class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum quis consequuntur minus quam, repellat totam fuga provident quaerat necessitatibus quisquam hic culpa! Nesciunt fuga aperiam aliquid, suscipit iure hic.</p>
-                        </div> -->
+                        <div class="main__right-side__content__left-side__post-box" id="postBox" style="display: flex; flex-direction: column-reverse;">
+                        </div>
                     </div>
                     <div class="main__right-side__content__right-side">
                         <div class="main__right-side__content__right-side__heading-box flex-space-btw">
@@ -169,5 +163,6 @@
     <script src="assets/mocks/user.js"></script>
     <script src="assets/js/logout.js"></script>
     <script src="assets/js/pictures.js"></script>
+    <script src="assets/js/posts.js"></script>
 </body>
 </html>
