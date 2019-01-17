@@ -51,7 +51,7 @@ let Registration = {
                 Users.resetStorage();
                 alert("You are now registred");
             }else{
-                alert("registration wend wrong");
+                alert("registration went wrong");
             }
         });
     }
